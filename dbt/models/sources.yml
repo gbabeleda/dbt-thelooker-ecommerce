@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: thelook_ecommerce
+    database: bigquery-public-data
+    schema: thelook_ecommerce
+    description: Fictitious E-commerce Dataset
+    tables:
+      - name: distribution_centers
+        description: List of distribution centers, and their locations    
+        columns:
+          - name: id
+            description: Unique id of the distribution center
+            tests:
+              - not_null
+              - unique
+        
+      - name: events
+        # description:
+      - name: inventory_items
+        # description: 
+      - name: order_items
+        # description:
+      - name: orders
+        # description:
+      - name: products
+        # description: 
+      - name: users
+        # description: 
+      
